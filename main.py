@@ -1,37 +1,37 @@
 import sys
 sys.path.append('/content/sample_data')
 
-import define_index_func as d_i
-import vowel_count as v_c
-import multiplication_table as m_t
-import mario_pyramid as m_p
-import sorted_list as s_l
+import define_index_func as di
+import vowel_count as vc
+import multiplication_table as mt
+import mario_pyramid as mp
+import sorted_list as sl
 import check_login as cl
 import email_validation as ev
 import email_domains as ed
 
 # index of 'i'
 s = input("Enter your string: ")
-index_result = d_i.define_index(s)
+index_result = di.define_index(s)
 print(f"Index of 'i' in your string is: {index_result}")
 
 # count vowels
 s2 = input("Enter another string: ")
-vowel_count_result = v_c.count_vowels(s2)
+vowel_count_result = vc.count_vowels(s2)
 print(f"Number of vowels: {vowel_count_result}")
 
 # multiplication table
 n = int(input("Enter a number for multiplication table: "))
-for line in m_t.multiplication(n):
+for line in mt.multiplication(n):
     print(line)
 
 # mario pyramid
 h = int(input("Enter pyramid height: "))
-for row in m_p.mario(h):
+for row in mp.mario(h):
     print(row)
 
 # sort list
-asc, desc = s_l.sort_list()
+asc, desc = sl.sort_list()
 print("Ascending:", asc)
 print("Descending:", desc)
 
